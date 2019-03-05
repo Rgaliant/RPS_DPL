@@ -9,29 +9,36 @@
       <header>
         <h1>Rock Paper Scissors</h1>
       </header>
+        <div class="new-btn">New Game</div>
+          <div id="top-score-container">
+            <span class="score-board1">
+              <div id="user-label" class="badge">User</div>
+              <span id="user-score">0</span>
+            </span>
+            <span class="score-board2">
+              <div id="computer-label" class="badge">Comp</div>
+              <span id="computer-score">0</span>
+            </span>
+          </div>
 
-      <div class="score-board">
-        <div id="user-label" class="badge">User</div>
-        <div id="computer-label" class="badge">Comp</div>
-        <span id="user-score">0</span>:<span id="computer-score">0</span>
-      </div>
-      <div class="result">
-        <p>Paper covers rock. You win!</p>
-      </div>
 
-      <div class="choices">
-        <div class="choice" id="r">
-          <img src="images/rock.png" alt="rock">
-        </div>
-        <div class="choice" id="p">
-          <img src="images/paper.png" alt="paper">
-        </div>
-        <div class="choice" id="s">
-          <img src="images/scissors.png" alt="scissors">
-        </div>
-        <p id="action-message">Make your move</p>
-      </div>
+            <div class="result">
+              <p>Make a choice to play the game!</p>
+            </div>
 
-      <script src="index.js"></script>
+            <div class="choices">
+              <div class="choice" id="r">
+                <img src="images/rock.png" alt="rock">
+              </div>
+              <div class="choice" id="p">
+                <img src="images/paper.png" alt="paper">
+              </div>
+              <div class="choice" id="s">
+                <img src="images/scissors.png" alt="scissors">
+              </div>
+              <p id="action-message">Make your move</p>
+            </div>
+
+            <script src="index.js"></script>
     </body>
 </html>

@@ -6,68 +6,94 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif
 }
 
 header {
   font-size: 30px;
-  background: white;
+  background: #03ce25;
   padding: 20px;
 }
 header h1 {
-  color: #2d2d32;
+  color: #e4e4e7;
   text-align: center;
-  font-family: Asap, sans-serif;
 }
 
+.new-btn {
+  display: inline-block;
+  margin: 30px 41%;
+  width: 235px;
+  padding: 10px;
+  border: 5px solid #03ce25;
+  color: white; 
+  font-size: 40px;
+}
 
-.score-board {
-  border: 3px solid white;
-  width: 200px;
-  margin: 20px auto;
+.new-btn:hover {
+  cursor: pointer;
+  background-color: #03ce25;
+}
+
+#top-score-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.score-board1 {
+  border: 5px solid #03ce25;
+  width: 10%;
   color: white;
   font-size: 46px;
   border-radius: 4px;
-  text-align: center;
+  text-align: right;
   padding: 15px 20px;
-  font-family: Asap, sans-serif;
+  position: relative;
+}
+
+.score-board2 {
+  border: 5px solid #03ce25;
+  width: 10%;
+  color: white;
+  font-size: 46px;
+  border-radius: 4px;
+  text-align: left;
+  padding: 15px 20px;
   position: relative;
 }
 
 .badge {
-  background: #e25840;
+  background: #03ce25;
   color: white;
-  font-size: 14px;
+  font-size: 34px;
   padding: 2px 10px;
-  font-family: Asap, sans-serif;
 }
 
 #user-label {
   position: absolute;
   top: 30px;
-  left: -25px;
+  left: -45px;
 }
 
 #computer-label {
   position: absolute;
   top: 30px;
-  right: -30px;
+  right: -70px;
 }
 
 .result {
   font-size: 40px;
-  color: white;
+  color: #03ce25;
 }
 .result > p {
   text-align: center;
   font-weight: bold;
-  font-family: Asap, sans-serif;
 }
 
 #action-message {
-  font-family: Asap, sans-serif;
   font-size: 30px;
   font-weight: bold;
-  color: white;
+  color: #03ce25;
   padding: 15px 0;
 }
 
@@ -87,7 +113,11 @@ header h1 {
 
 .choice:hover {
   cursor: pointer;
-  background: white;
+  background: #03ce25;
+}
+
+.choices.hidden {
+  display: none;
 }
 
 
